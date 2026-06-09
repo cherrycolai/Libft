@@ -1,38 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: idilsincer <idilsincer@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/04 16:43:45 by idilsincer        #+#    #+#             */
-/*   Updated: 2026/06/09 19:28:29 by idilsincer       ###   ########.fr       */
+/*   Created: 2026/06/09 19:28:34 by idilsincer        #+#    #+#             */
+/*   Updated: 2026/06/09 19:29:59 by idilsincer       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
+size_t	ft_strlen(const char *str)
 {
 	size_t	i;
-	size_t	dst_len;
-	size_t	src_len;
-	size_t	sum;
 
 	i = 0;
-	sum = 0;
-	dst_len = ft_strlen(dst);
-	src_len = ft_strlen(src);
-	if (dsize > dst_len)
-		sum = dst_len + 5;
-	else
-		sum = src_len + dsize;
-	while (src[i] && dsize > (dst_len + 1))
-	{
-		dst[dst_len] = src[i];
-		dst_len++;
+	while (str[i])
 		i++;
-	}
-	dst[dst_len] = '\0';
-	return (sum);
+	return (i);
 }
