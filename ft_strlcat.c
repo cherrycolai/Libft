@@ -6,13 +6,15 @@
 /*   By: idilsincer <idilsincer@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 16:43:45 by idilsincer        #+#    #+#             */
-/*   Updated: 2026/06/04 16:55:28 by idilsincer       ###   ########.fr       */
+/*   Updated: 2026/06/09 19:12:18 by idilsincer       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(char *str)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	while (str[i])
@@ -20,12 +22,12 @@ unsigned int	ft_strlen(char *str)
 	return (i);
 }
 
-unsigned int	ft_strlcat(char *dst, const char *src, unsigned int dsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 {
-	unsigned int	i;
-	unsigned int	dst_len;
-	unsigned int	src_len;
-	unsigned int	sum;
+	size_t	i;
+	size_t	dst_len;
+	size_t	src_len;
+	size_t	sum;
 
 	i = 0;
 	sum = 0;
