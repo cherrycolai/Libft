@@ -6,14 +6,16 @@
 /*   By: idilsincer <idilsincer@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 16:42:40 by idilsincer        #+#    #+#             */
-/*   Updated: 2026/06/04 16:53:06 by idilsincer       ###   ########.fr       */
+/*   Updated: 2026/06/09 19:12:40 by idilsincer       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncat(char *dst, const char *src, unsigned int ssize)
+#include "libft.h"
+
+char	*ft_strncat(char *dst, const char *src, size_t ssize)
 {
-	unsigned int	i;
-	unsigned int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;

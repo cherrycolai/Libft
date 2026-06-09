@@ -6,9 +6,11 @@
 /*   By: idilsincer <idilsincer@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 15:22:58 by idilsincer        #+#    #+#             */
-/*   Updated: 2026/06/04 15:31:54 by idilsincer       ###   ########.fr       */
+/*   Updated: 2026/06/09 19:14:42 by idilsincer       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strstr(const char *haystack, const char *needle)
 {

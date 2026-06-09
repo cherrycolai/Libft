@@ -6,9 +6,11 @@
 /*   By: idilsincer <idilsincer@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 15:15:44 by idilsincer        #+#    #+#             */
-/*   Updated: 2026/06/04 15:55:10 by idilsincer       ###   ########.fr       */
+/*   Updated: 2026/06/09 19:14:28 by idilsincer       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strcmp(char *s1, char *s2)
 {

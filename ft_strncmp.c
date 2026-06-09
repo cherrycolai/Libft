@@ -6,13 +6,15 @@
 /*   By: idilsincer <idilsincer@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 15:18:55 by idilsincer        #+#    #+#             */
-/*   Updated: 2026/06/04 15:56:09 by idilsincer       ###   ########.fr       */
+/*   Updated: 2026/06/09 19:13:45 by idilsincer       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+#include "libft.h"
+
+int	ft_strncmp(char *s1, char *s2, size_t n)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	while (i < n)
