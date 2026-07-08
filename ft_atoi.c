@@ -6,11 +6,11 @@
 /*   By: idilsincer <idilsincer@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 15:08:12 by idilsincer        #+#    #+#             */
-/*   Updated: 2026/06/09 19:14:17 by idilsincer       ###   ########.fr       */
+/*   Updated: 2026/07/08 17:12:59 by idilsincer       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 int	ft_atoi(const char *nptr)
 {

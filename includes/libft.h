@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   includes/libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: idilsincer <idilsincer@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/23 14:29:21 by idilsincer        #+#    #+#             */
-/*   Updated: 2026/05/23 15:36:21 by idilsincer       ###   ########.fr       */
+/*   Updated: 2026/07/05 19:44:58 by idilsincer       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ void	ft_bzero(void *s, size_t n);								// zero a byte string
 void	*ft_memcpy(void *dest, const void *src);					// copy memory area
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n); 	// copy memory area for n bytes when the c is found
 void	*ft_memmove(void *dest, const void *src, size_t n);
+void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);					// scan memory for a character
 int		ft_memcmp(const void *s1, const void *s2, size_t n);		// compare memory areas
 size_t	ft_strlen(const char *s);									// calculate the length of a string

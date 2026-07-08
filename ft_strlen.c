@@ -6,11 +6,11 @@
 /*   By: idilsincer <idilsincer@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/09 19:28:34 by idilsincer        #+#    #+#             */
-/*   Updated: 2026/06/09 19:29:59 by idilsincer       ###   ########.fr       */
+/*   Updated: 2026/07/08 17:12:59 by idilsincer       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 size_t	ft_strlen(const char *str)
 {
