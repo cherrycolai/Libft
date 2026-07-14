@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: idilsincer <idilsincer@student.42.fr>      +#+  +:+       +#+        */
+/*   By: idsincer <idsincer@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/04 15:15:44 by idilsincer        #+#    #+#             */
-/*   Updated: 2026/07/08 17:12:59 by idilsincer       ###   ########.fr       */
+/*   Created: 2026/07/14 15:29:51 by idsincer          #+#    #+#             */
+/*   Updated: 2026/07/14 15:52:26 by idsincer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/libft.h"
 
-int	ft_strcmp(char *s1, char *s2)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	int	i;
+	void	*number_of_members;
 
-	i = 0;
-	while (s1[i] == s2[i] && s1[i])
-		i++;
-	return (s1[i] - s2[i]);
+	number_of_members = malloc(nmemb * size);
+	if (number_of_members)
+		ft_bzero(number_of_members, nmemb * size);
+	return (number_of_members);
 }
