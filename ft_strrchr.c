@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: idsincer <idsincer@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/21 10:57:25 by idilsincer        #+#    #+#             */
-/*   Updated: 2026/07/26 17:00:23 by idsincer         ###   ########.fr       */
+/*   Created: 2026/07/26 16:58:40 by idsincer          #+#    #+#             */
+/*   Updated: 2026/07/26 17:05:27 by idsincer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/libft.h"
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	size_t	i;
 
-	i = 0;
-	while (s[i])
+	i = ft_strlen(s);
+	while (i > 0)
 	{
 		if (s[i] == (char)c)
-			return((char *)&s[i]);
-		i++;
+			return ((char *)&s[i]);
+		i--;
 	}
-	if (!(char)c)
+	if (s[i] == (char)c)
 		return ((char *)&s[i]);
 	return (0);
 }
