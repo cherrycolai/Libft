@@ -6,13 +6,11 @@
 /*   By: idsincer <idsincer@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/25 18:09:19 by idsincer          #+#    #+#             */
-/*   Updated: 2026/07/25 18:13:33 by idsincer         ###   ########.fr       */
+/*   Updated: 2026/09/02 18:41:36 by idsincer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
-
-int		ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c + 32);

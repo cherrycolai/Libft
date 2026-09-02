@@ -6,13 +6,13 @@
 /*   By: idsincer <idsincer@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/25 19:50:45 by idsincer          #+#    #+#             */
-/*   Updated: 2026/07/25 20:35:06 by idsincer         ###   ########.fr       */
+/*   Updated: 2026/09/02 18:08:11 by idsincer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
-char 	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
 	size_t	s1_length;
@@ -24,7 +24,7 @@ char 	*ft_strjoin(char const *s1, char const *s2)
 	s2_length = ft_strlen(s2);
 	str = (char *)malloc(s1_length + s2_length + 1);
 	if (!str)
-        return (0);
+		return (0);
 	ft_strlcpy(str, s1, s1_length + 1);
 	ft_strlcat(str, s2, s1_length + s2_length + 1);
 	return (str);

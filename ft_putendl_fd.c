@@ -6,13 +6,11 @@
 /*   By: idsincer <idsincer@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 15:51:11 by idsincer          #+#    #+#             */
-/*   Updated: 2026/07/27 16:00:16 by idsincer         ###   ########.fr       */
+/*   Updated: 2026/09/02 18:40:18 by idsincer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
-
-void ft_putendl_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
 	if (!s)
 		return ;

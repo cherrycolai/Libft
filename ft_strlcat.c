@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: idilsincer <idilsincer@student.42.fr>      +#+  +:+       +#+        */
+/*   By: idsincer <idsincer@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 16:43:45 by idilsincer        #+#    #+#             */
-/*   Updated: 2026/07/08 17:12:59 by idilsincer       ###   ########.fr       */
+/*   Updated: 2026/09/02 16:36:47 by idsincer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	dst_len;
@@ -23,11 +23,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 	sum = 0;
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
-	if (dsize > dst_len)
-		sum = dst_len + 5;
+	if (size > dst_len)
+		sum = dst_len + src_len;
 	else
-		sum = src_len + dsize;
-	while (src[i] && dsize > (dst_len + 1))
+		sum = src_len + size;
+	while (src[i] && size > (dst_len + 1))
 	{
 		dst[dst_len] = src[i];
 		dst_len++;

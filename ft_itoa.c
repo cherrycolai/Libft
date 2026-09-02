@@ -6,11 +6,11 @@
 /*   By: idsincer <idsincer@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/14 15:53:46 by idsincer          #+#    #+#             */
-/*   Updated: 2026/07/14 17:09:23 by idsincer         ###   ########.fr       */
+/*   Updated: 2026/09/02 17:52:16 by idsincer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 size_t	find_base(long number)
 {
@@ -26,6 +26,7 @@ size_t	find_base(long number)
 	}
 	return (counter);
 }
+
 char	*ft_itoa(int n)
 {
 	char	*str;
@@ -36,7 +37,7 @@ char	*ft_itoa(int n)
 	len = find_base(number);
 	str = (char *)malloc(sizeof(char) * len + 1);
 	if (!str)
-		return 0;
+		return (0);
 	str[len] = '\0';
 	if (number == 0)
 		str[0] = '0';
@@ -49,7 +50,6 @@ char	*ft_itoa(int n)
 	{
 		str[--len] = (number % 10) + 48;
 		number /= 10;
-		
 	}
 	return (str);
 }

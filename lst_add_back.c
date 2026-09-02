@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   lst_add_back.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: idsincer <idsincer@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/08 18:40:12 by idsincer          #+#    #+#             */
-/*   Updated: 2026/07/08 19:09:06 by idsincer         ###   ########.fr       */
+/*   Created: 2026/09/02 17:24:51 by idsincer          #+#    #+#             */
+/*   Updated: 2026/09/02 17:39:30 by idsincer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
-char	*ft_strcpy(char *dst, const char *src)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	int	i;
+	t_list	*tmp;
 
-	i = 0;
-	while ((char *)src[i])
+	if (!new)
+		return ;
+	if (!*lst)
 	{
-		dst[i] = src[i];
-		i++;
+		*lst = new;
+		return ;
 	}
-	dst[i] = '\0';
-	return (dst);
+	tmp = ft_lstlast(*lst);
+	tmp->next = new;
 }
-

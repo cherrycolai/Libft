@@ -6,11 +6,11 @@
 /*   By: idsincer <idsincer@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/26 16:58:40 by idsincer          #+#    #+#             */
-/*   Updated: 2026/07/26 17:05:27 by idsincer         ###   ########.fr       */
+/*   Updated: 2026/08/03 20:02:48 by idsincer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

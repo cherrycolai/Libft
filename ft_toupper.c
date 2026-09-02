@@ -6,15 +6,13 @@
 /*   By: idsincer <idsincer@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/25 18:12:31 by idsincer          #+#    #+#             */
-/*   Updated: 2026/07/25 18:13:37 by idsincer         ###   ########.fr       */
+/*   Updated: 2026/09/02 18:41:40 by idsincer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
-
-int		ft_toupper(int c)
+int	ft_toupper(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (c >= 'a' && c <= 'z')
 		return (c - 32);
 	else
 		return (c);
